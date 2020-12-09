@@ -8,19 +8,19 @@ export const HeroWrapper = styled.section`
 
     h1 {
       text-align: center;
-      margin-top: var(--gap-sm);
+      margin-top: var(--gap-md);
     }
 
     p {
       text-align: center;
       color: ${colors.neutral.grayish_violet};
-      margin-top: var(--gap-sm);
+      margin: var(--gap-md) auto 0 auto;
     }
 
     button {
       text-align: center;
       display: block;
-      margin: var(--gap-sm) auto 0 auto;
+      margin: var(--gap-md) auto 0 auto;
     }
   }
 `;
