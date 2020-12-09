@@ -2,6 +2,10 @@ import styled from "styled-components";
 
 export const HeaderWrapper = styled.header`
   & {
-    padding: var(--gap-lg) 0;
+    padding: var(--gap-md) 0;
+
+    a {
+      padding: initial;
+    }
   }
 `;
