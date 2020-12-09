@@ -24,7 +24,7 @@ const Reset = createGlobalStyle`
     body {
         ${fonts.primary}
         color: ${colors.primary.dark_violet};
-        background-color: var(--secondary-color);
+        background-color: ${colors.neutral.gray_light};
 
         min-height: 100vh;
     }
