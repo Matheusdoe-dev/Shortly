@@ -6,6 +6,7 @@ import borders from "../../styles/tools/borders";
 export const BenefitsWrapper = styled.section`
   & {
     text-align: center;
+    padding: var(--gap-xl) 0;
 
     h2 {
       margin-bottom: var(--gap-md);
