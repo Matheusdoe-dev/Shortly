@@ -4,7 +4,7 @@ import colors from "../../styles/settings/colors";
 
 export const HeroWrapper = styled.section`
   & {
-    padding: var(--gap-sm) 0;
+    padding: var(--gap-sm) 0 var(--gap-xl) 0;
 
     h1 {
       text-align: center;
@@ -25,8 +25,13 @@ export const HeroWrapper = styled.section`
   }
 `;
 
-export const HeroImg = styled.img`
+export const HeroImg = styled.div`
   & {
-    background-size: cover;
+    max-width: 100vw;
+    overflow-x: hidden;
+
+    img {
+      width: 150%;
+    }
   }
 `;

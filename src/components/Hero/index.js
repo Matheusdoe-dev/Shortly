@@ -13,7 +13,9 @@ const Hero = () => {
       <Container fluid>
         <Row>
           <Col xs="12">
-            <HeroImg src={heroImg} alt="Working illustration" />
+            <HeroImg>
+              <img src={heroImg} alt="Working illustration" />
+            </HeroImg>
           </Col>
           <Col xs="12">
             <h1>More than just shorter links</h1>
