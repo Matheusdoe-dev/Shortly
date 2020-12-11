@@ -10,7 +10,9 @@ export const ShorterFormWrapper = styled.form`
   & {
     width: 100%;
     padding: var(--gap-md);
-    background: url(${mobileFormBg}) ${colors.primary.dark_violet} top center;
+    background: no-repeat url(${mobileFormBg}) ${colors.primary.dark_violet}
+      center right;
+    background-size: contain;
     border-radius: ${borders.radius.primary};
 
     display: flex;
