@@ -20,7 +20,7 @@ export const NavToggleWrapper = styled.div`
 
     :after {
       margin-top: var(--gap);
-      box-shadow: 0 10px 0 0 ${colors.neutral.grayish_violet};
+      box-shadow: 0 12px 0 0 ${colors.neutral.grayish_violet};
     }
   }
 
