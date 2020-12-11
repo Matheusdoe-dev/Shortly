@@ -12,7 +12,7 @@ const Header = () => {
     <>
       <HeaderWrapper>
         <Container fluid>
-          <Row>
+          <Row style={{ alignItems: "center" }}>
             <Col xs="5">
               <Brand />
             </Col>
