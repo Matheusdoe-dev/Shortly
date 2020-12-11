@@ -8,7 +8,7 @@ import Input from "../Input";
 
 const ShorterForm = () => {
   return (
-    <Container>
+    <Container fluid>
       <Row>
         <Col xs="12">
           <ShorterFormWrapper>

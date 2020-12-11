@@ -29,5 +29,26 @@ export const ShorterFormWrapper = styled.form`
       width: 100%;
       border-radius: ${borders.radius.primary};
     }
+
+    @media (min-width: 768px) {
+      background-image: url(${desktopFormBg});
+      background-position: right center;
+      background-size: cover;
+
+      position: absolute;
+      top: -130px;
+      z-index: 900;
+
+      display: grid;
+      grid-template-columns: 9fr 3fr;
+      column-gap: var(--gap-sm);
+      align-items: center;
+
+      padding: var(--gap-lg);
+
+      div {
+        margin-bottom: 0;
+      }
+    }
   }
 `;
