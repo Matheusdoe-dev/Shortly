@@ -41,6 +41,10 @@ const Reset = createGlobalStyle`
     fieldset {
         border: none;
     }
+
+    .container-fluid {
+        width: 90%;
+    }
 `;
 
 export default Reset;

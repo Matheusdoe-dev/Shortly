@@ -10,12 +10,14 @@ const Gaps = createGlobalStyle`
         --gap-xl: 4rem;
     }
 
-    /* --gap: .5rem;
-    --gap-xs: 1rem;
-    --gap-sm: 1.5rem;
-    --gap-md: 2rem;
-    --gap-lg: 4rem;
-    --gap-xl: 8rem; */
+    @media (min-width: 768px) {
+        --gap: .5rem;
+        --gap-xs: 1rem;
+        --gap-sm: 1.5rem;
+        --gap-md: 2rem;
+        --gap-lg: 4rem;
+        --gap-xl: 8rem;
+    }   
 `;
 
 export default Gaps;
