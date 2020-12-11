@@ -15,7 +15,7 @@ const Footer = () => {
       <Container>
         <Row>
           <Col xs="12" lg="3">
-            <Brand secondary />
+            <Brand secondary center />
           </Col>
           <Col xs="12" lg="2">
             <FooterNav

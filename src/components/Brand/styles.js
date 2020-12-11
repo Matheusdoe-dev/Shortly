@@ -8,12 +8,16 @@ export const BrandWrapper = styled.a`
     width: 130px;
     height: 36px;
 
-    margin: 0 auto;
-
     img {
       width: 130px;
       height: 36px;
+    }
+  }
 
+  &.center {
+    margin: 0 auto;
+
+    img {
       margin: 0 auto;
     }
   }

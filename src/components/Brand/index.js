@@ -10,9 +10,9 @@ const logos = {
   secondary: logo2Img,
 };
 
-const Brand = ({ secondary }) => {
+const Brand = ({ secondary, center }) => {
   return (
-    <BrandWrapper href="/">
+    <BrandWrapper href="/" className={center ? `center` : ``}>
       {secondary ? (
         <img src={logos.secondary} alt="Shortly" />
       ) : (
