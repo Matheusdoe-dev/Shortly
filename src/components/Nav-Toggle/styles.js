@@ -22,6 +22,10 @@ export const NavToggleWrapper = styled.div`
       margin-top: var(--gap);
       box-shadow: 0 12px 0 0 ${colors.neutral.grayish_violet};
     }
+
+    @media (min-width: 768px) {
+      display: none;
+    }
   }
 
   &.active {

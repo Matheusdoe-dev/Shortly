@@ -1,11 +1,12 @@
 import React from "react";
 // styles
-import { HeaderWrapper } from "./styles";
+import { HeaderWrapper, Nav } from "./styles";
 // components
 import { Container, Row, Col } from "react-bootstrap";
 import Brand from "../Brand";
-import HeaderNav from "../Header-nav";
+import MobileMenu from "../Mobile-menu";
 import NavToggle from "../Nav-Toggle";
+import HeaderNav from "../Header-nav";
 
 const Header = () => {
   return (
@@ -13,24 +14,18 @@ const Header = () => {
       <HeaderWrapper>
         <Container fluid>
           <Row style={{ alignItems: "center" }}>
-            <Col xs="5">
+            <Col xs="5" md="3" lg="2">
               <Brand />
             </Col>
-            <Col
-              xs="7"
-              style={{
-                display: "flex",
-                justifyContent: "flex-end",
-                alignItems: "center",
-              }}
-            >
+            <Nav xs="7" md="9" lg="10">
+              <HeaderNav />
               <NavToggle />
-            </Col>
+            </Nav>
           </Row>
         </Container>
       </HeaderWrapper>
 
-      <HeaderNav />
+      <MobileMenu />
     </>
   );
 };

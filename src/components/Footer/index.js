@@ -14,7 +14,7 @@ const Footer = () => {
     <FooterWrapper>
       <Container>
         <Row>
-          <Col xs="12" lg="3">
+          <Col xs="12" lg="2">
             <Brand secondary center />
           </Col>
           <Col xs="12" lg="2">
@@ -48,7 +48,7 @@ const Footer = () => {
               ]}
             />
           </Col>
-          <Col xs="12" lg="3">
+          <Col xs="12" lg="4">
             <SocialMedias />
           </Col>
         </Row>

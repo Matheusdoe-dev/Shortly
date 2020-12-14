@@ -4,24 +4,26 @@ import { HeaderNavWrapper } from "./styles";
 // components
 import PrimaryButton from "../Primary-button";
 
-const navItens = [
-  { label: "Features", link: "/" },
-  { label: "Pricing", link: "/" },
-  { label: "Resources", link: "/" },
-  { label: "Login", link: "/" },
-];
-
 const HeaderNav = () => {
   return (
-    <HeaderNavWrapper data-anime="menu-mobile">
+    <HeaderNavWrapper>
       <ul>
-        {navItens.map(({ label, link }, index) => (
-          <li key={index}>
-            <a href={link}>{label}</a>
-          </li>
-        ))}
         <li>
-          <PrimaryButton>Sign Up</PrimaryButton>
+          <a href="/">Features</a>
+        </li>
+        <li>
+          <a href="/">Pricing</a>
+        </li>
+        <li>
+          <a href="/">Resources</a>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <a href="/">Login</a>
+        </li>
+        <li>
+          <PrimaryButton>Sign up</PrimaryButton>
         </li>
       </ul>
     </HeaderNavWrapper>
