@@ -4,7 +4,7 @@ import colors from "../settings/colors";
 import fonts from "../settings/fonts";
 
 const Reset = createGlobalStyle`
-    * {
+    *, ul, ol, dl {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
