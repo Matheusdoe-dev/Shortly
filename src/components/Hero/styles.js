@@ -22,7 +22,7 @@ export const HeroContainer = styled.div`
       grid-template-columns: 7fr 5fr;
       grid-template-areas: "content image";
       align-items: center;
-      padding-top: var(--gap-xl);
+      padding-top: var(--gap-lg);
     }
   }
 `;
