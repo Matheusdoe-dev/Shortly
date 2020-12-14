@@ -1,6 +1,7 @@
 import styled from "styled-components";
 // styles
 import colors from "../../styles/settings/colors";
+import hovers from "../../styles/tools/hovers";
 
 export const FooterWrapper = styled.footer`
   & {
@@ -9,6 +10,11 @@ export const FooterWrapper = styled.footer`
 
     a:first-child {
       margin-bottom: var(--gap-xl);
+      transition: 0.3s;
+
+      :hover {
+        ${hovers.secondary}
+      }
     }
   }
 `;
@@ -21,6 +27,11 @@ export const Attribution = styled.section`
 
     a {
       color: ${colors.neutral.grayish_violet};
+      transition: 0.3s;
+
+      :hover {
+        ${hovers.secondary}
+      }
     }
   }
 `;

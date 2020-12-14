@@ -1,6 +1,7 @@
 import styled from "styled-components";
 // styles
 import colors from "../../styles/settings/colors";
+import hovers from "../../styles/tools/hovers";
 
 export const HeaderNavWrapper = styled.nav`
   & {
@@ -22,6 +23,11 @@ export const HeaderNavWrapper = styled.nav`
         a {
           color: ${colors.neutral.grayish_violet};
           font-size: 0.875rem;
+          transition: 0.3s;
+        }
+
+        a:hover {
+          ${hovers.primary}
         }
       }
     }

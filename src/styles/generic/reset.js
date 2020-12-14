@@ -17,8 +17,9 @@ const Reset = createGlobalStyle`
     }
 
     a:hover,
-        button:hover {
+    button:hover {
         cursor: pointer;
+        text-decoration: none;
     }
 
     body {
