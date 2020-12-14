@@ -2,11 +2,14 @@ import styled from "styled-components";
 // styles
 import colors from "../../styles/settings/colors";
 import borders from "../../styles/tools/borders";
+import grid from "../../styles/objects/grid";
 
 export const BenefitsWrapper = styled.section`
   & {
+    ${grid.container}
+
     text-align: center;
-    padding: var(--gap-xl) 0;
+    padding: calc(var(--gap-xl) * 2) 0 var(--gap-xl) 0;
 
     h2 {
       margin-bottom: var(--gap-md);
@@ -14,7 +17,22 @@ export const BenefitsWrapper = styled.section`
 
     p {
       color: ${colors.neutral.grayish_violet};
-      margin-bottom: var(--gap-lg);
+      margin: 0 auto var(--gap-lg) auto;
+    }
+  }
+`;
+
+export const BenefitsHead = styled.article``;
+
+export const BenefitsItens = styled.section`
+  & {
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: 768px) {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      column-gap: var(--gap-md);
     }
   }
 `;
@@ -39,19 +57,23 @@ export const BenefitsIcon = styled.div`
     background: ${colors.primary.dark_violet};
     padding: var(--gap-md);
     box-sizing: initial;
-    width: 40px;
-    height: 40px;
+    width: 36px;
+    height: 36px;
     border-radius: ${borders.radius.icons};
 
     margin: 0 auto var(--gap-md) auto;
 
     position: absolute;
-    top: -21%;
-    left: 39%;
+    top: -43px;
+    left: 43%;
 
     img {
-      width: 40px;
-      height: 40px;
+      width: 36px;
+      height: 36px;
+    }
+
+    @media (min-width: 768px) {
+      left: 33%;
     }
   }
 `;
