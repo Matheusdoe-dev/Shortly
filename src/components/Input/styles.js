@@ -19,6 +19,15 @@ export const InputWrapper = styled.div`
       color: ${colors.neutral.very_dark_blue};
       padding: var(--gap-sm);
       border-radius: ${borders.radius.primary};
+      outline: none;
+      border: none;
+
+      transition: 0.3s;
+    }
+
+    input:focus {
+      filter: brightness(75%);
+      transition: 0.3s;
     }
   }
 `;
