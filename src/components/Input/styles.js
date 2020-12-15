@@ -29,5 +29,9 @@ export const InputWrapper = styled.div`
       filter: brightness(75%);
       transition: 0.3s;
     }
+
+    input.error {
+      border: 2px solid var(--danger);
+    }
   }
 `;
