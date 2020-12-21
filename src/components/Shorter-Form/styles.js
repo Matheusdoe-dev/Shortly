@@ -50,5 +50,9 @@ export const ShorterFormWrapper = styled.form`
         margin-bottom: 0;
       }
     }
+
+    @media (min-width: 992px) {
+      grid-template-columns: 10fr 2fr;
+    }
   }
 `;
