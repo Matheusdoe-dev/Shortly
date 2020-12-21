@@ -11,6 +11,18 @@ const Animations = createGlobalStyle`
             transform: translate(0,0);
         }
     }
+
+    @keyframes fade-down {
+        from {
+            opacity: 0;
+            transform: translate(0, -20px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translate(0, 0);
+        }
+    }
     
 `;
 
