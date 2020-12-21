@@ -1,4 +1,4 @@
-# Vanbook
+# Shortly
 A URL shorter application made with React.js
 
 ![Repo Size][repo-size]
