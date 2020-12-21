@@ -13,6 +13,7 @@ const Input = ({ label, name, value, error, ...props }) => {
         value={value}
         {...props}
       />
+      {error && <span>{error}</span>}
     </InputWrapper>
   );
 };

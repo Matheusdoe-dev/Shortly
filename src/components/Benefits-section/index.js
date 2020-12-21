@@ -11,9 +11,6 @@ import {
   BenefitsHead,
   BenefitsItens,
 } from "./styles";
-import grid from "../../styles/objects/grid";
-// components
-import { Container, Row, Col } from "react-bootstrap";
 
 const BenefitsContent = [
   {

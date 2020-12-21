@@ -1,6 +1,4 @@
 import React from "react";
-// imgs
-import logoImg from "../../assets/images/logo-2.svg";
 // styles
 import { FooterWrapper, Attribution } from "./styles";
 // components
@@ -63,7 +61,7 @@ const Footer = () => {
               >
                 Frontend Mentor
               </a>
-              . Coded by{" "}
+              . Coded by
               <a href="https://github.com/Matheusdoe-dev" target="BLANK">
                 Matheusdoe-dev
               </a>

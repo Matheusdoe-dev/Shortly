@@ -33,5 +33,11 @@ export const InputWrapper = styled.div`
     input.error {
       border: 2px solid var(--danger);
     }
+
+    span {
+      display: inline-block;
+      margin-top: var(--gap-xs);
+      color: var(--danger);
+    }
   }
 `;
