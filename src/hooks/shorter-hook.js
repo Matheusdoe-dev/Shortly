@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 // services
 import shrtcodeApi from "../services/shrtcodeApi";
 
@@ -7,6 +7,7 @@ import shrtcodeApi from "../services/shrtcodeApi";
 const useShorter = () => {
   const [url, setURL] = useState("");
 
+  // user input error status
   const [error, setError] = useState("");
 
   const [loadingStatus, setLoadingStatus] = useState(false);
@@ -29,17 +30,23 @@ const useShorter = () => {
       },
     })
       .then((r) => {
-        if (localStorage.getItem("urls")) {
-          const old_data = JSON.parse(localStorage.getItem("urls"));
+        const urlInput = document.querySelector('[data-anime="url"]');
+
+        if (sessionStorage.getItem("urls")) {
+          const old_data = JSON.parse(sessionStorage.getItem("urls"));
 
           old_data.push({ url, short_link: r.data.result.short_link });
 
-          localStorage.setItem("urls", JSON.stringify(old_data));
+          sessionStorage.setItem("urls", JSON.stringify(old_data));
         } else {
           const new_data = [{ url, short_link: r.data.result.short_link }];
 
-          localStorage.setItem("urls", JSON.stringify(new_data));
+          sessionStorage.setItem("urls", JSON.stringify(new_data));
         }
+
+        setURL(r.data.result.short_link);
+        urlInput.select();
+        document.execCommand("Copy");
 
         alert("URL shorted succesful");
       })
@@ -50,7 +57,7 @@ const useShorter = () => {
       .finally(() => setLoadingStatus(false));
   };
 
-  return { handleSubmitURL, url, setURL, error, loadingStatus };
+  return { handleSubmitURL, url, setURL, error, loadingStatus, setError };
 };
 
 export default useShorter;
