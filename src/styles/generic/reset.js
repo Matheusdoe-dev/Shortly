@@ -4,7 +4,7 @@ import colors from "../settings/colors";
 import fonts from "../settings/fonts";
 
 const Reset = createGlobalStyle`
-    * {
+    *, ul, ol, dl {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
@@ -17,14 +17,15 @@ const Reset = createGlobalStyle`
     }
 
     a:hover,
-        button:hover {
+    button:hover {
         cursor: pointer;
+        text-decoration: none;
     }
 
     body {
         ${fonts.primary}
         color: ${colors.primary.dark_violet};
-        background-color: var(--secondary-color);
+        background-color: ${colors.neutral.gray_light};
 
         min-height: 100vh;
     }
@@ -40,6 +41,10 @@ const Reset = createGlobalStyle`
 
     fieldset {
         border: none;
+    }
+
+    .container-fluid {
+        width: 90%;
     }
 `;
 

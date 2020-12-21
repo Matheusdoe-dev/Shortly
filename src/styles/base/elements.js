@@ -1,6 +1,6 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from "styled-components";
 // styles
-import fonts from '../settings/fonts';
+import fonts from "../settings/fonts";
 
 const Elements = createGlobalStyle`
     h1,
@@ -49,6 +49,20 @@ const Elements = createGlobalStyle`
     a,
     button {
         font-weight: 700;
+    }
+
+    @media (min-width: 768px) {
+        h1 {
+            font-size: 3rem;
+        }
+
+        h2 {
+            font-size: 2.25rem;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+        }
     }
 `;
 

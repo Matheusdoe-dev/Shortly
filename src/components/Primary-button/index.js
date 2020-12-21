@@ -2,8 +2,8 @@ import React from "react";
 // styles
 import { PrimaryButtonWrapper } from "./styles";
 
-const PrimaryButton = ({ children }) => {
-  return <PrimaryButtonWrapper>{children}</PrimaryButtonWrapper>;
+const PrimaryButton = ({ children, ...props }) => {
+  return <PrimaryButtonWrapper {...props}>{children}</PrimaryButtonWrapper>;
 };
 
 export default PrimaryButton;
